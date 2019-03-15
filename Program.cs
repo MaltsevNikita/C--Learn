@@ -10,27 +10,23 @@ namespace Theme1
     {
         static int[,] Array = new int[,] { { 1, 2, 3, 4, 5 }, { 5, 3, 7, 1, 5 } };
 
-        public void GetElement(int row, int column, int[,] a)
+        static void GetElement(int row, int column, int[,] a)
         {
             for (int i = 0; i < row; i++)
             {
                 for (int j = 0; j < column; j++)
                 {
-                    if (i == row && j == column)
-                    {
-                        Console.WriteLine(a[row, column]);
-                    }
+                        Console.Write(a[row, column]);
+                
                 }
             }
-
-
-            Console.ReadLine();
 
         }
 
         static void Main(string[] args)
         {
-            GetElement(1, 2, Array);
+            GetElement(1, 3, Array);
+            Console.ReadLine();
         }
     }
 }
