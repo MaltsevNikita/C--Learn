@@ -12,20 +12,23 @@ namespace Theme1
 
         static void GetElement(int row, int column, int[,] a)
         {
-            for (int i = 0; i < row; i++)
+            for (int i = 0; i < Array.GetLength(0); i++)
             {
-                for (int j = 0; j < column; j++)
+                for (int j = 0; j < Array.GetLength(1); j++)
                 {
-                        Console.Write(a[row, column]);
+                        Console.Write(a[i, j]);
                 
                 }
+                Console.WriteLine();
             }
+
+            Console.WriteLine(Array[ row,column ]);
 
         }
 
         static void Main(string[] args)
         {
-            GetElement(1, 3, Array);
+            GetElement(0, 1, Array);
             Console.ReadLine();
         }
     }
