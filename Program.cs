@@ -8,12 +8,10 @@ namespace Theme1
 {
     class Program
     {
-        int[,] imyArray2 = new int[,] { { 1, 2, 3, 4, 5 }, { 5, 3, 7, 1, 5 } };
+        static int[,] Array = new int[,] { { 1, 2, 3, 4, 5 }, { 5, 3, 7, 1, 5 } };
 
-        static void Main(string[] args)
+        public void GetElement(int row, int column, int[,] a)
         {
-            public void GetElement(int row, int column, int[,] a)
-            {
             for (int i = 0; i < row; i++)
             {
                 for (int j = 0; j < column; j++)
@@ -28,6 +26,12 @@ namespace Theme1
 
             Console.ReadLine();
 
-            }
+        }
+
+        static void Main(string[] args)
+        {
+            GetElement(1, 2, Array);
+        }
     }
 }
+
