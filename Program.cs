@@ -10,7 +10,7 @@ namespace Theme1
     {
         static void Main(string[] args)
         {
-            int[,] Array1 = new int[,] { { 1, 2, 3, 4, 5 }, { 5, 3, 7, 1, 5 } };
+            int[,] Array1 =  { { 1, 2, 3, 4, 5 }, { 5, 3, 7, 1, 5 } };
             public void  GetElement(int row, int column, int [,] a)
             {
                 for(int i = 0; i < row; i++)
